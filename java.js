@@ -263,7 +263,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const url = buildApiURL();
 
     try {
-      const res = await fetch(url);
+      const res = await fetch("/api/news");
       const data = await res.json();
       if (data && data.articles && data.articles.length) {
 
